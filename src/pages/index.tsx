@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-
+import History from '@/Components/History'
 export default function Home() {
   return (
     <>
@@ -33,6 +33,7 @@ export default function Home() {
             <span>Your purchase has been confirmed!</span>
           </div>
         </div>
+        <History/>
       </main>
     </>
   )
