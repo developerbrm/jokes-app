@@ -1,7 +1,11 @@
+import Header from '@/Components/common-components/Header'
 import Head from 'next/head'
 import Image from 'next/image'
 
 export default function Home() {
+  const profilePicUrl = `https://picsum.photos/150`
+  const profilePicAlt = `user's proflie image`
+
   return (
     <>
       <Head>
@@ -11,9 +15,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="center select2-dropdown p-3 text-5xl text-amber-500 shadow-xl">
-          Just Lorem things!
-        </h1>
+        <Header />
+
+        {/* <div className="avatar">
+          <div className="relative w-12 rounded-full ring ring-sky-700 ring-offset-2 ring-offset-base-100">
+            <Image src={profilePicUrl} alt={profilePicAlt} fill priority />
+          </div>
+        </div>
 
         <div className="alert alert-success shadow-lg">
           <div>
@@ -32,7 +40,7 @@ export default function Home() {
             </svg>
             <span>Your purchase has been confirmed!</span>
           </div>
-        </div>
+        </div> */}
       </main>
     </>
   )
