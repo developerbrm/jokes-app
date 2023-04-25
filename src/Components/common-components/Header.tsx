@@ -2,29 +2,29 @@ import { useId } from 'react'
 import { v1 as uuidV1 } from 'uuid'
 import Image from 'next/image'
 import {
-  Favorite,
+  FavoriteBorder,
   History,
-  House,
-  Share,
-  Tune,
-  VolumeUp
+  HouseOutlined,
+  ShareOutlined,
+  TuneOutlined,
+  VolumeUpOutlined
 } from '@mui/icons-material'
 
 const Header = () => {
   const navigationDataArr = [
     {
       name: 'options',
-      Icon: Tune,
+      Icon: TuneOutlined,
       path: '/options'
     },
     {
       name: 'favorite',
-      Icon: Favorite,
+      Icon: FavoriteBorder,
       path: '/favorite'
     },
     {
       name: 'home',
-      Icon: House,
+      Icon: HouseOutlined,
       path: '/'
     },
     {
@@ -34,12 +34,12 @@ const Header = () => {
     },
     {
       name: 'volume',
-      Icon: VolumeUp,
+      Icon: VolumeUpOutlined,
       path: '/mute'
     },
     {
       name: 'share',
-      Icon: Share,
+      Icon: ShareOutlined,
       path: '/share'
     }
   ]
@@ -64,8 +64,8 @@ const Header = () => {
 
   return (
     <header className="">
-      <nav className="fixed bottom-0 left-0 z-50 w-full primary-color">
-        <div className="m-6 mb-6 flex items-center justify-center gap-2 border-t-2 border-current border-dashed pt-6">
+      <nav className="primary-color fixed bottom-0 left-0 z-50 w-full">
+        <div className="m-6 mb-6 flex items-center justify-center gap-2 border-t-2 border-dashed border-current pt-6 drop-shadow-lg">
           {navigationDataArr.map(handleNavigationData)}
         </div>
       </nav>
