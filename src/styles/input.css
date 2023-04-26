@@ -8,22 +8,6 @@
     font-family: 'Source Sans Pro', sans-serif;
   }
 
-  .primary-color {
-    @apply text-sky-600;
-  }
-
-  .primary-color-light {
-    @apply text-sky-500;
-  }
-
-  .primary-color-dark {
-    @apply text-sky-700;
-  }
-
-  .primary-color-darker {
-    @apply text-sky-800;
-  }
-
   .apply-base-img-css {
     @apply block h-full w-full max-w-full object-contain object-center;
   }
